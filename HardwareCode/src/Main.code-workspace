@@ -1,0 +1,30 @@
+{
+	"folders": [
+		{
+			"path": "C:/Users/20232/Documents/PlatformIO/Projects/Main"
+		},
+		{
+			"name": "ceshi2",
+			"path": "C:/Users/20232/Documents/PlatformIO/Projects/ceshi2"
+		},
+		{
+			"name": "Main",
+			"path": "../../../../../xiaoxueqi/Main"
+		},
+		{
+			"name": "Main",
+			"path": ".."
+		}
+	],
+	"settings": {
+		"files.associations": {
+			"array": "cpp",
+			"deque": "cpp",
+			"string": "cpp",
+			"unordered_map": "cpp",
+			"vector": "cpp",
+			"string_view": "cpp",
+			"initializer_list": "cpp"
+		}
+	}
+}
