@@ -1,0 +1,61 @@
+# -*- coding: utf-8 -*-
+import numpy as np
+
+# 串口与协议
+PORTS = ["COM9"]
+BAUD  = 921600
+TYPE_POINTS = 0x11
+TYPE_POINT1 = 0x01
+
+# 雷达与过滤
+Q_MIN = 15
+R_MIN = 0.05
+R_MAX = 6.0
+USE_CLOCKWISE_SENSOR_ANGLE = False
+
+# 坐标系
+YAW_INPUT_OFFSET_DEG = 0.0
+
+# 地图参数
+MAP_SIZE_M = 8.0
+RES = 0.02
+W = H = int(MAP_SIZE_M / RES)
+CX, CY = W // 2, H // 2
+GRID_FLIP_X = False
+GRID_FLIP_Y = True
+
+# 概率地图（log-odds）
+L_FREE, L_OCC = -0.5, +2.0
+L_MIN, L_MAX = -5.0, +5.0
+K_FREE = 3
+K_HIT  = 3
+OCC_THRESH = 0.65
+
+# 小车参数
+ROBOT_SIZE = 0.20
+ROBOT_HALF_SIZE = ROBOT_SIZE / 2
+
+# 探索参数
+SCAN_SEC = 5.0
+MOVE_STEP_M = 0.7
+DETECTION_RANGE_M = 0.35
+
+# 远距离避障
+FRONT_OBSTACLE_WARN_DIST = 1.05
+SIDE_CHECK_RANGE = 1.2
+
+# 动作与稳定判定
+SAFE_READ_ONLY   = False
+SEND_E_ON_START  = True
+POLL_XY_YAW      = True
+STOP_AFTER_MOVE        = True
+POST_STOP_SETTLE_SEC   = 0.5
+RX_STATS_EVERY = 1.0
+
+SETTLE_WINDOW_SEC   = 0.7
+SETTLE_EPS_M        = 0.03
+SETTLE_YAW_EPS_DEG  = 5.0
+
+# 绘图/批次
+BATCH_MAX = 30000
+PLOT_HZ = 8.0
